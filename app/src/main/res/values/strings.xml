@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Islom</string>
+    <string name="bomdod">Бомдод</string>
+    <string name="quyosh">Қуёш</string>
+    <string name="peshin">Пешин</string>
+    <string name="asr">Аср</string>
+    <string name="shom">Шом</string>
+    <string name="xufton">Хуфтон</string>
+    <string name="namoz_vaqtlari">Намоз вақтлари</string>
+    <string name="title_activity_section">SectionActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+</resources>

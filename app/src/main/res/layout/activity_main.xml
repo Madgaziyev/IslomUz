@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="uz.islom.main.MainActivity"
+    >
+
+    <LinearLayout
+        android:id="@+id/llHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cMainHeaderBg"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/namoz_vaqtlari"
+            android:textColor="@color/cMainText"
+            android:textSize="22sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/cMainHeaderDark"
+            android:weightSum="6"
+            >
+            <LinearLayout
+                android:id="@+id/llBomdod"
+                style="@style/AppTheme.MainPrayTimesLayout"
+                >
+
+                <TextView
+                    style="@style/AppTheme.MainPrayTimesView"
+                    android:text="@string/bomdod"
+                    />
+
+                <TextView
+                    android:id="@+id/tvBomdod"
+                    style="@style/AppTheme.MainPrayTimesView"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llQuyosh"
+                style="@style/AppTheme.MainPrayTimesLayout"
+                >
+
+                <TextView
+                    style="@style/AppTheme.MainPrayTimesView"
+                    android:text="@string/quyosh"
+                    />
+
+                <TextView
+                    android:id="@+id/tvQuyosh"
+                    style="@style/AppTheme.MainPrayTimesView"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llPeshin"
+                style="@style/AppTheme.MainPrayTimesLayout"
+                >
+
+                <TextView
+                    style="@style/AppTheme.MainPrayTimesView"
+                    android:text="@string/peshin"
+                    />
+
+                <TextView
+                    android:id="@+id/tvPeshin"
+                    style="@style/AppTheme.MainPrayTimesView"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llAsr"
+                style="@style/AppTheme.MainPrayTimesLayout"
+                >
+
+                <TextView
+                    style="@style/AppTheme.MainPrayTimesView"
+                    android:text="@string/asr"
+                    />
+
+                <TextView
+                    android:id="@+id/tvAsr"
+                    style="@style/AppTheme.MainPrayTimesView"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llShom"
+                style="@style/AppTheme.MainPrayTimesLayout"
+                >
+
+                <TextView
+                    style="@style/AppTheme.MainPrayTimesView"
+                    android:text="@string/shom"
+                    />
+
+                <TextView
+                    android:id="@+id/tvShom"
+                    style="@style/AppTheme.MainPrayTimesView"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llXufton"
+                style="@style/AppTheme.MainPrayTimesLayout"
+                >
+
+                <TextView
+                    style="@style/AppTheme.MainPrayTimesView"
+                    android:text="@string/xufton"
+                    />
+
+                <TextView
+                    android:id="@+id/tvXufton"
+                    style="@style/AppTheme.MainPrayTimesView"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextClock
+            android:id="@+id/tcClock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:format24Hour="kk:mm"
+            android:textColor="@color/cMainText"
+            android:textSize="24sp"
+            />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvGregorian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/ivTimer"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                android:text="Якшанба, 4-Февраль"
+                android:textColor="@color/cMainText"
+                android:textSize="12sp"
+                />
+
+            <ImageView
+                android:id="@+id/ivTimer"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                android:src="@drawable/ic_timer"
+                />
+
+            <TextView
+                android:id="@+id/tvHijri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivTimer"
+                app:layout_constraintTop_toTopOf="parent"
+
+                android:text="19-Жумадул аввал"
+                android:textSize="12sp"
+                android:textColor="@color/cMainText"
+                />
+        </android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/flBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llHeader"
+        >
+
+        <ImageView
+            android:id="@+id/ivBody"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_body_height"
+            android:scaleType="fitXY"
+            android:src="@drawable/main_body"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            >
+            <ImageView
+                android:id="@+id/ivNamoz"
+                android:layout_width="0dp"
+                android:layout_height="96dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_namoz"
+                />
+
+            <ImageView
+                android:id="@+id/ivRadio"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_radio"
+                />
+
+            <ImageView
+                android:id="@+id/ivQibla"
+                android:layout_width="0dp"
+                android:layout_height="128dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_qibla"
+                />
+
+            <ImageView
+                android:id="@+id/ivRamazon"
+                android:layout_width="0dp"
+                android:layout_height="96dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_ramazon"
+                />
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/flContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/flBody"
+        >
+
+        <ImageView
+            android:id="@+id/ivFooter"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_footer_height"
+            android:layout_gravity="bottom"
+            android:scaleType="fitXY"
+            android:src="@drawable/main_footer"
+            />
+
+        <HorizontalScrollView
+            android:id="@+id/svContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:scrollbars="none"
+            >
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:weightSum="3"
+                >
+
+                <TableRow
+                    style="@style/AppTheme.MainRows"
+                    >
+                    <FrameLayout
+                        android:id="@+id/flIslom"
+                        style="@style/AppTheme.MainSitesLayout">
+                        <ImageView
+                            style="@style/AppTheme.MainSitesView"
+                            android:src="@drawable/logo_islom"
+                            />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/flIslam"
+                        style="@style/AppTheme.MainSitesLayout">
+                        <ImageView
+                            style="@style/AppTheme.MainSitesView"
+                            android:src="@drawable/logo_islam"
+                            />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/flQuron"
+                        style="@style/AppTheme.MainSitesLayout">
+                        <ImageView
+                            style="@style/AppTheme.MainSitesView"
+                            android:src="@drawable/logo_quron"
+                            />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/flHadis"
+                        style="@style/AppTheme.MainSitesLayout">
+                        <ImageView
+                            style="@style/AppTheme.MainSitesView"
+                            android:src="@drawable/logo_hadis"
+                            />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/flFiqh"
+                        style="@style/AppTheme.MainSitesLayout">
+                        <ImageView
+                            style="@style/AppTheme.MainSitesView"
+                            android:src="@drawable/logo_fiqh"
+                            />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/flArab"
+                        style="@style/AppTheme.MainSitesLayout">
+                        <ImageView
+                            style="@style/AppTheme.MainSitesView"
+                            android:src="@drawable/logo_arabic"
+                            />
+                    </FrameLayout>
+                </TableRow>
+
+                <TableRow
+                    style="@style/AppTheme.MainRows"
+                    >
+                    <FrameLayout
+                        android:id="@+id/flMadrasa"
+                        style="@style/AppTheme.MainSitesLayout">
+                        <ImageView
+                            style="@style/AppTheme.MainSitesView"
+                            android:src="@drawable/logo_madrasa"
+                            />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/flMasjid"
+                        style="@style/AppTheme.MainSitesLayout">
+                        <ImageView
+                            style="@style/AppTheme.MainSitesView"
+                            android:src="@drawable/logo_masjid"/>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/flSiyrat"
+                        style="@style/AppTheme.MainSitesLayout">
+                        <ImageView
+                            style="@style/AppTheme.MainSitesView"
+                            android:src="@drawable/logo_siyrat"
+                            />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/flTarix"
+                        style="@style/AppTheme.MainSitesLayout">
+                        <ImageView
+                            style="@style/AppTheme.MainSitesView"
+                            android:src="@drawable/logo_tarix"
+                            />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/flMuslima"
+                        style="@style/AppTheme.MainSitesLayout">
+                        <ImageView
+                            style="@style/AppTheme.MainSitesView"
+                            android:src="@drawable/logo_muslima"
+                            />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/flSavollar"
+                        style="@style/AppTheme.MainSitesLayout">
+                        <ImageView
+                            style="@style/AppTheme.MainSitesView"
+                            android:src="@drawable/logo_savollar"
+                            />
+                    </FrameLayout>
+                </TableRow>
+
+                <TableRow
+                    style="@style/AppTheme.MainRows"
+                    >
+                    <FrameLayout
+                        android:id="@+id/flInfo"
+                        style="@style/AppTheme.MainSitesLayout">
+                        <ImageView
+                            style="@style/AppTheme.MainSitesView"
+                            android:src="@drawable/logo_info"
+                            />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/flAdabiyot"
+                        style="@style/AppTheme.MainSitesLayout">
+                        <ImageView
+                            style="@style/AppTheme.MainSitesView"
+                            android:src="@drawable/logo_adabiyot"
+                            />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/flTazkiya"
+                        style="@style/AppTheme.MainSitesLayout">
+                        <ImageView
+                            style="@style/AppTheme.MainSitesView"
+                            android:src="@drawable/logo_tazkiya"
+                            />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/flTib"
+                        style="@style/AppTheme.MainSitesLayout">
+                        <ImageView
+                            style="@style/AppTheme.MainSitesView"
+                            android:src="@drawable/logo_tib"
+                            />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/flMedia"
+                        style="@style/AppTheme.MainSitesLayout">
+                        <ImageView
+                            style="@style/AppTheme.MainSitesView"
+                            android:src="@drawable/logo_media"
+                            />
+                    </FrameLayout>
+                </TableRow>
+            </TableLayout>
+        </HorizontalScrollView>
+    </FrameLayout>
+</RelativeLayout>
