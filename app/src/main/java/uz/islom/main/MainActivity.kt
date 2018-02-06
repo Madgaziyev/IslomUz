@@ -4,6 +4,9 @@ import android.content.BroadcastReceiver
 import android.content.Intent
 import android.content.IntentFilter
 import android.os.Bundle
+import android.support.v4.app.Fragment
+import android.support.v4.app.FragmentManager
+import android.support.v4.app.FragmentPagerAdapter
 import android.support.v7.app.AppCompatActivity
 import android.view.Window
 import android.view.WindowManager
@@ -26,28 +29,12 @@ class MainActivity : AppCompatActivity(), MainView {
 
         presenter = MainPresenterImp(this)
 
-        flIslom.setOnClickListener { presenter?.onItemClick(0) }
-        flIslam.setOnClickListener { presenter?.onItemClick(1) }
-        flQuron.setOnClickListener { presenter?.onItemClick(2) }
-        flHadis.setOnClickListener { presenter?.onItemClick(3) }
-        flFiqh.setOnClickListener { presenter?.onItemClick(4) }
-        flArab.setOnClickListener { presenter?.onItemClick(5) }
-        flMadrasa.setOnClickListener { presenter?.onItemClick(6) }
-        flMasjid.setOnClickListener { presenter?.onItemClick(7) }
-        flSiyrat.setOnClickListener { presenter?.onItemClick(8) }
-        flTarix.setOnClickListener { presenter?.onItemClick(9) }
-        flMuslima.setOnClickListener { presenter?.onItemClick(10) }
-        flSavollar.setOnClickListener { presenter?.onItemClick(11) }
-        flInfo.setOnClickListener { presenter?.onItemClick(12) }
-        flAdabiyot.setOnClickListener { presenter?.onItemClick(13) }
-        flTazkiya.setOnClickListener { presenter?.onItemClick(14) }
-        flTib.setOnClickListener { presenter?.onItemClick(15) }
-        flMedia.setOnClickListener { presenter?.onItemClick(16) }
 
         ivNamoz.setOnClickListener { presenter?.onItemClick(17) }
         ivRadio.setOnClickListener { presenter?.onItemClick(18) }
         ivQibla.setOnClickListener { presenter?.onItemClick(19) }
         ivRamazon.setOnClickListener { presenter?.onItemClick(20) }
+        vpContent.adapter = SectionsPagerAdapter(supportFragmentManager)
     }
 
     override fun onResume() {
@@ -147,6 +134,17 @@ class MainActivity : AppCompatActivity(), MainView {
     override fun dateChanged(gregorian: String, hijri: String) {
         tvGregorian.text = gregorian
         tvHijri.text = hijri
+    }
+
+    inner class SectionsPagerAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
+
+        override fun getItem(position: Int): Fragment {
+            return MainFragment.newInstance(position,presenter)
+        }
+
+        override fun getCount(): Int {
+            return 2
+        }
     }
 
     private fun getAnimation(): RotateAnimation {

@@ -204,12 +204,31 @@
         >
 
         <ImageView
+            android:id="@+id/ivBody3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_body_height"
+            android:layout_marginTop="4dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/main_body_3"
+            />
+
+        <ImageView
+            android:id="@+id/ivBody2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_body_height"
+            android:layout_marginTop="2dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/main_body_2"
+            />
+
+        <ImageView
             android:id="@+id/ivBody"
             android:layout_width="match_parent"
             android:layout_height="@dimen/main_body_height"
             android:scaleType="fitXY"
             android:src="@drawable/main_body"
             />
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -260,7 +279,6 @@
         android:layout_alignParentBottom="true"
         android:layout_below="@+id/flBody"
         >
-
         <ImageView
             android:id="@+id/ivFooter"
             android:layout_width="match_parent"
@@ -270,186 +288,13 @@
             android:src="@drawable/main_footer"
             />
 
-        <HorizontalScrollView
-            android:id="@+id/svContent"
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vpContent"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:paddingTop="8dp"
             android:paddingBottom="8dp"
-            android:scrollbars="none"
             >
-            <TableLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:paddingStart="16dp"
-                android:paddingEnd="16dp"
-                android:weightSum="3"
-                >
-
-                <TableRow
-                    style="@style/AppTheme.MainRows"
-                    >
-                    <FrameLayout
-                        android:id="@+id/flIslom"
-                        style="@style/AppTheme.MainSitesLayout">
-                        <ImageView
-                            style="@style/AppTheme.MainSitesView"
-                            android:src="@drawable/logo_islom"
-                            />
-                    </FrameLayout>
-
-                    <FrameLayout
-                        android:id="@+id/flIslam"
-                        style="@style/AppTheme.MainSitesLayout">
-                        <ImageView
-                            style="@style/AppTheme.MainSitesView"
-                            android:src="@drawable/logo_islam"
-                            />
-                    </FrameLayout>
-
-                    <FrameLayout
-                        android:id="@+id/flQuron"
-                        style="@style/AppTheme.MainSitesLayout">
-                        <ImageView
-                            style="@style/AppTheme.MainSitesView"
-                            android:src="@drawable/logo_quron"
-                            />
-                    </FrameLayout>
-
-                    <FrameLayout
-                        android:id="@+id/flHadis"
-                        style="@style/AppTheme.MainSitesLayout">
-                        <ImageView
-                            style="@style/AppTheme.MainSitesView"
-                            android:src="@drawable/logo_hadis"
-                            />
-                    </FrameLayout>
-
-                    <FrameLayout
-                        android:id="@+id/flFiqh"
-                        style="@style/AppTheme.MainSitesLayout">
-                        <ImageView
-                            style="@style/AppTheme.MainSitesView"
-                            android:src="@drawable/logo_fiqh"
-                            />
-                    </FrameLayout>
-
-                    <FrameLayout
-                        android:id="@+id/flArab"
-                        style="@style/AppTheme.MainSitesLayout">
-                        <ImageView
-                            style="@style/AppTheme.MainSitesView"
-                            android:src="@drawable/logo_arabic"
-                            />
-                    </FrameLayout>
-                </TableRow>
-
-                <TableRow
-                    style="@style/AppTheme.MainRows"
-                    >
-                    <FrameLayout
-                        android:id="@+id/flMadrasa"
-                        style="@style/AppTheme.MainSitesLayout">
-                        <ImageView
-                            style="@style/AppTheme.MainSitesView"
-                            android:src="@drawable/logo_madrasa"
-                            />
-                    </FrameLayout>
-
-                    <FrameLayout
-                        android:id="@+id/flMasjid"
-                        style="@style/AppTheme.MainSitesLayout">
-                        <ImageView
-                            style="@style/AppTheme.MainSitesView"
-                            android:src="@drawable/logo_masjid"/>
-                    </FrameLayout>
-
-                    <FrameLayout
-                        android:id="@+id/flSiyrat"
-                        style="@style/AppTheme.MainSitesLayout">
-                        <ImageView
-                            style="@style/AppTheme.MainSitesView"
-                            android:src="@drawable/logo_siyrat"
-                            />
-                    </FrameLayout>
-
-                    <FrameLayout
-                        android:id="@+id/flTarix"
-                        style="@style/AppTheme.MainSitesLayout">
-                        <ImageView
-                            style="@style/AppTheme.MainSitesView"
-                            android:src="@drawable/logo_tarix"
-                            />
-                    </FrameLayout>
-
-                    <FrameLayout
-                        android:id="@+id/flMuslima"
-                        style="@style/AppTheme.MainSitesLayout">
-                        <ImageView
-                            style="@style/AppTheme.MainSitesView"
-                            android:src="@drawable/logo_muslima"
-                            />
-                    </FrameLayout>
-
-                    <FrameLayout
-                        android:id="@+id/flSavollar"
-                        style="@style/AppTheme.MainSitesLayout">
-                        <ImageView
-                            style="@style/AppTheme.MainSitesView"
-                            android:src="@drawable/logo_savollar"
-                            />
-                    </FrameLayout>
-                </TableRow>
-
-                <TableRow
-                    style="@style/AppTheme.MainRows"
-                    >
-                    <FrameLayout
-                        android:id="@+id/flInfo"
-                        style="@style/AppTheme.MainSitesLayout">
-                        <ImageView
-                            style="@style/AppTheme.MainSitesView"
-                            android:src="@drawable/logo_info"
-                            />
-                    </FrameLayout>
-
-                    <FrameLayout
-                        android:id="@+id/flAdabiyot"
-                        style="@style/AppTheme.MainSitesLayout">
-                        <ImageView
-                            style="@style/AppTheme.MainSitesView"
-                            android:src="@drawable/logo_adabiyot"
-                            />
-                    </FrameLayout>
-
-                    <FrameLayout
-                        android:id="@+id/flTazkiya"
-                        style="@style/AppTheme.MainSitesLayout">
-                        <ImageView
-                            style="@style/AppTheme.MainSitesView"
-                            android:src="@drawable/logo_tazkiya"
-                            />
-                    </FrameLayout>
-
-                    <FrameLayout
-                        android:id="@+id/flTib"
-                        style="@style/AppTheme.MainSitesLayout">
-                        <ImageView
-                            style="@style/AppTheme.MainSitesView"
-                            android:src="@drawable/logo_tib"
-                            />
-                    </FrameLayout>
-
-                    <FrameLayout
-                        android:id="@+id/flMedia"
-                        style="@style/AppTheme.MainSitesLayout">
-                        <ImageView
-                            style="@style/AppTheme.MainSitesView"
-                            android:src="@drawable/logo_media"
-                            />
-                    </FrameLayout>
-                </TableRow>
-            </TableLayout>
-        </HorizontalScrollView>
+        </android.support.v4.view.ViewPager>
     </FrameLayout>
 </RelativeLayout>

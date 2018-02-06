@@ -7,4 +7,23 @@
     <string name="shom">Shom</string>
     <string name="xufton">Xufton</string>
     <string name="namoz_vaqtlari">Namoz vaqtlari</string>
+
+    <string name="islom_uz">Islom.uz</string>
+    <string name="islam_uz">Islam.uz</string>
+    <string name="quran_uz">Quran.uz</string>
+    <string name="hadis_islom_uz">Hadis.islom.uz</string>
+    <string name="fiqh_uz">Fiqh.uz</string>
+    <string name="arabic_uz">Arabic.uz</string>
+    <string name="madrasa_uz">Madrasa.uz</string>
+    <string name="masjid_uz">Masjid.uz</string>
+    <string name="siyrat_uz">Siyrat.uz</string>
+    <string name="e_tarix_uz">E-tarix.uz</string>
+    <string name="muslimaat_uz">Muslimaat.uz</string>
+    <string name="savollar_islom_uz">Savollar.islom.uz</string>
+    <string name="info_islom_uz">Info.islom.uz</string>
+    <string name="e_adabiyot_uz">E-adabiyot.uz</string>
+    <string name="tazkiya_uz">Tazkiya.uz</string>
+    <string name="tib_islom_uz">Tib.islom.uz</string>
+    <string name="media_islom_uz">Media.islom.uz</string>
+
 </resources>

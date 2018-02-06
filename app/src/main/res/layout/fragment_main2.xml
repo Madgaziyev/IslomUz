@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3"
+    >
+
+    <LinearLayout
+        style="@style/AppTheme.MainContentsRow"
+        >
+        <LinearLayout
+            android:id="@+id/llTarix"
+            style="@style/AppTheme.MainContentsLayout"
+            android:orientation="vertical"
+            >
+            <ImageView
+                style="@style/AppTheme.MainContentsView"
+                android:src="@drawable/logo_tarix"
+                />
+            <TextView
+                style="@style/AppTheme.MainContentsText"
+                android:text="@string/e_tarix_uz"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llMuslima"
+            style="@style/AppTheme.MainContentsLayout">
+            <ImageView
+                style="@style/AppTheme.MainContentsView"
+                android:src="@drawable/logo_muslima"
+                />
+            <TextView
+                style="@style/AppTheme.MainContentsText"
+                android:text="@string/muslimaat_uz"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llSavollar"
+            style="@style/AppTheme.MainContentsLayout">
+            <ImageView
+                style="@style/AppTheme.MainContentsView"
+                android:src="@drawable/logo_savollar"
+                />
+            <TextView
+                style="@style/AppTheme.MainContentsText"
+                android:text="@string/savollar_islom_uz"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/AppTheme.MainContentsRow"
+        >
+
+        <LinearLayout
+            android:id="@+id/llInfo"
+            style="@style/AppTheme.MainContentsLayout">
+
+            <ImageView
+                style="@style/AppTheme.MainContentsView"
+                android:src="@drawable/logo_info"
+                />
+            <TextView
+                style="@style/AppTheme.MainContentsText"
+                android:text="@string/info_islom_uz"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llAdabiyot"
+            style="@style/AppTheme.MainContentsLayout">
+            <ImageView
+                style="@style/AppTheme.MainContentsView"
+                android:src="@drawable/logo_adabiyot"
+                />
+            <TextView
+                style="@style/AppTheme.MainContentsText"
+                android:text="@string/e_adabiyot_uz"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llTazkiya"
+            style="@style/AppTheme.MainContentsLayout">
+            <ImageView
+                style="@style/AppTheme.MainContentsView"
+                android:src="@drawable/logo_tazkiya"
+                />
+            <TextView
+                style="@style/AppTheme.MainContentsText"
+                android:text="@string/tazkiya_uz"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/AppTheme.MainContentsRow"
+        >
+
+        <LinearLayout
+            android:id="@+id/llTib"
+            style="@style/AppTheme.MainContentsLayout">
+            <ImageView
+                style="@style/AppTheme.MainContentsView"
+                android:src="@drawable/logo_tib"
+                />
+            <TextView
+                style="@style/AppTheme.MainContentsText"
+                android:text="@string/tib_islom_uz"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llMedia"
+            style="@style/AppTheme.MainContentsLayout">
+            <ImageView
+                style="@style/AppTheme.MainContentsView"
+                android:src="@drawable/logo_media"/>
+            <TextView
+                style="@style/AppTheme.MainContentsText"
+                android:text="@string/media_islom_uz"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

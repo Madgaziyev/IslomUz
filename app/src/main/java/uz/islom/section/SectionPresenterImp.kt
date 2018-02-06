@@ -10,6 +10,9 @@ package uz.islom.section
  * $linkidin = linkedin.com/in/javokhirkadirov
  **/
 class SectionPresenterImp(private var view:SectionView) : SectionPresenter{
+    override fun onRefresh() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
 
     override fun onCreate() {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3"
+    >
+
+    <LinearLayout
+        style="@style/AppTheme.MainContentsRow"
+        >
+        <LinearLayout
+            android:id="@+id/llIslom"
+            style="@style/AppTheme.MainContentsLayout"
+            >
+            <ImageView
+                style="@style/AppTheme.MainContentsView"
+                android:src="@drawable/logo_islom"
+                />
+            <TextView
+                style="@style/AppTheme.MainContentsText"
+                android:text="@string/islom_uz"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llIslam"
+            style="@style/AppTheme.MainContentsLayout">
+            <ImageView
+                style="@style/AppTheme.MainContentsView"
+                android:src="@drawable/logo_islam"
+                />
+            <TextView
+                style="@style/AppTheme.MainContentsText"
+                android:text="@string/islam_uz"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llQuron"
+            style="@style/AppTheme.MainContentsLayout">
+            <ImageView
+                style="@style/AppTheme.MainContentsView"
+                android:src="@drawable/logo_quron"
+                />
+            <TextView
+                style="@style/AppTheme.MainContentsText"
+                android:text="@string/quran_uz"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/AppTheme.MainContentsRow"
+        >
+        <LinearLayout
+            android:id="@+id/llHadis"
+            style="@style/AppTheme.MainContentsLayout">
+            <ImageView
+                style="@style/AppTheme.MainContentsView"
+                android:src="@drawable/logo_hadis"
+                />
+            <TextView
+                style="@style/AppTheme.MainContentsText"
+                android:text="@string/hadis_islom_uz"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llFiqh"
+            style="@style/AppTheme.MainContentsLayout">
+
+            <ImageView
+                style="@style/AppTheme.MainContentsView"
+                android:src="@drawable/logo_fiqh"
+                />
+            <TextView
+                style="@style/AppTheme.MainContentsText"
+                android:text="@string/fiqh_uz"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llArab"
+            style="@style/AppTheme.MainContentsLayout">
+            <ImageView
+                style="@style/AppTheme.MainContentsView"
+                android:src="@drawable/logo_arabic"
+                />
+            <TextView
+                style="@style/AppTheme.MainContentsText"
+                android:text="@string/arabic_uz"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/AppTheme.MainContentsRow"
+        >
+
+        <LinearLayout
+            android:id="@+id/llMadrasa"
+            style="@style/AppTheme.MainContentsLayout">
+            <ImageView
+                style="@style/AppTheme.MainContentsView"
+                android:src="@drawable/logo_madrasa"
+                />
+            <TextView
+                style="@style/AppTheme.MainContentsText"
+                android:text="@string/madrasa_uz"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llMasjid"
+            style="@style/AppTheme.MainContentsLayout">
+            <ImageView
+                style="@style/AppTheme.MainContentsView"
+                android:src="@drawable/logo_masjid"/>
+            <TextView
+                style="@style/AppTheme.MainContentsText"
+                android:text="@string/masjid_uz"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llSiyrat"
+            style="@style/AppTheme.MainContentsLayout">
+            <ImageView
+                style="@style/AppTheme.MainContentsView"
+                android:src="@drawable/logo_siyrat"
+                />
+            <TextView
+                style="@style/AppTheme.MainContentsText"
+                android:text="@string/siyrat_uz"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

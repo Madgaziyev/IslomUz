@@ -1,7 +1,5 @@
 package uz.islom.main
 
-import java.util.*
-
 /**
  * $developer = JavokhirKadirov
  * $project = IslomUz

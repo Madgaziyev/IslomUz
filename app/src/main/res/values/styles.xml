@@ -30,25 +30,35 @@
         <item name="android:textColor">@color/cMainText</item>
     </style>
 
-    <style name="AppTheme.MainRows" parent="AppTheme">
+
+
+    <style name="AppTheme.MainContentsRow" parent="AppTheme">
         <item name="android:layout_height">0dp</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_weight">1</item>
+        <item name="android:weightSum">3</item>
     </style>
 
-    <style name="AppTheme.MainSitesLayout" parent="AppTheme">
+    <style name="AppTheme.MainContentsLayout" parent="AppTheme">
         <item name="android:layout_height">match_parent</item>
-        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
         <item name="android:gravity">center</item>
-        <item name="android:paddingStart">8dp</item>
-        <item name="android:paddingEnd">8dp</item>
     </style>
 
-
-    <style name="AppTheme.MainSitesView" parent="AppTheme">
-        <item name="android:layout_height">72dp</item>
-        <item name="android:layout_width">72dp</item>
+    <style name="AppTheme.MainContentsView" parent="AppTheme">
+        <item name="android:layout_height">@dimen/main_content_view_size</item>
+        <item name="android:layout_width">@dimen/main_content_view_size</item>
     </style>
+
+    <style name="AppTheme.MainContentsText" parent="AppTheme">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
 

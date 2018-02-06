@@ -2,7 +2,10 @@
 <resources>
     <dimen name="main_body_height">96dp</dimen>
     <dimen name="main_footer_height">96dp</dimen>
-    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="main_content_view_size">72dp</dimen>
+
+
+
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="nav_header_vertical_spacing">8dp</dimen>
