@@ -1,17 +1,14 @@
-package uz.islom.model
+package uz.islom.section
 
 /**
  * $developer = JavokhirKadirov
  * $project = IslomUz
- * $date = 2/5/18
+ * $date = 2/11/18
  * $web_site = https://kadirov.me
  * $email = kadirov.me@gmail.com
  * $github = github.com/javokhirkadirov
  * $linkidin = linkedin.com/in/javokhirkadirov
  **/
-class Article(private var articles : ArrayList<ArticleRes>){
+class ArticleManager{
 
-
-    data class ArticleRes(val id:String,val title:String,val imageUrl:String,val hits:String,val time:String)
 }
-

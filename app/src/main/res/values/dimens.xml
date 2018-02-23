@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="main_body_height">96dp</dimen>
+    <dimen name="main_body_img_height">96dp</dimen>
+    <dimen name="main_body_height">144dp</dimen>
     <dimen name="main_footer_height">96dp</dimen>
     <dimen name="main_content_view_size">72dp</dimen>
 

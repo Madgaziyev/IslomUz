@@ -22,7 +22,13 @@ class MainPresenterImp (private var view : MainView): MainPresenter {
     }
 
     override fun onItemClick(pos: Int) {
-        view.goSectionActivity(if(pos in 0..16) pos else 0)
+        when(pos){
+            in 0..16 -> view.goSectionActivity(pos)
+            17 -> view.goNamozActivity()
+            18 -> view.goRadioActivity()
+            19 -> view.goQiblaActivity()
+            20 -> view.goRamazonActivity()
+        }
     }
 
     override fun onPause() {

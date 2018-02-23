@@ -8,6 +8,7 @@ import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentPagerAdapter
 import android.support.v7.app.AppCompatActivity
+import android.support.v7.app.AppCompatDelegate
 import android.view.Window
 import android.view.WindowManager
 import android.view.animation.Animation
@@ -25,10 +26,10 @@ class MainActivity : AppCompatActivity(), MainView {
         super.onCreate(savedInstanceState)
         requestWindowFeature(Window.FEATURE_NO_TITLE)
         window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
+        AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
         setContentView(R.layout.activity_main)
 
         presenter = MainPresenterImp(this)
-
 
         ivNamoz.setOnClickListener { presenter?.onItemClick(17) }
         ivRadio.setOnClickListener { presenter?.onItemClick(18) }
@@ -74,19 +75,19 @@ class MainActivity : AppCompatActivity(), MainView {
     }
 
     override fun goNamozActivity() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
     }
 
     override fun goRadioActivity() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
     }
 
     override fun goQiblaActivity() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
     }
 
     override fun goRamazonActivity() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
     }
 
     override fun currentTimeChanged(pos: Int) {
@@ -148,7 +149,7 @@ class MainActivity : AppCompatActivity(), MainView {
     }
 
     private fun getAnimation(): RotateAnimation {
-        val animation = RotateAnimation(-2F, 2F, 0f, 0f)
+        val animation = RotateAnimation(-3F, 3F, 0f, 0f)
         animation.duration = 3000
         animation.repeatCount = Animation.INFINITE
         animation.repeatMode = Animation.REVERSE

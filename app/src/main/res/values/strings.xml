@@ -9,9 +9,6 @@
     <string name="namoz_vaqtlari">Намоз вақтлари</string>
     <string name="title_activity_section">SectionActivity</string>
 
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-
     <string name="islom_uz">Islom.uz</string>
     <string name="islam_uz">Islam.uz</string>
     <string name="quran_uz">Quran.uz</string>
@@ -29,6 +26,72 @@
     <string name="tazkiya_uz">Tazkiya.uz</string>
     <string name="tib_islom_uz">Tib.islom.uz</string>
     <string name="media_islom_uz">Media.islom.uz</string>
+
+    <string name="qidirish">Қидириш</string>
+
+    <string-array name="menu_islom">
+        <item>Янгиликлар</item>
+        <item>Бош саҳифа</item>
+        <item>Қуръон</item>
+        <item>Ҳадис</item>
+        <item>Китоблар</item>
+        <item>Муомалот</item>
+        <item>Мавзулар</item>
+        <item>Медиа</item>
+        <item>Тадбирлар</item>
+        <item>Ислом</item>
+    </string-array>
+
+    <string-array name="menu_fiqh">
+        <item>Аёллар фиқҳи</item>
+        <item>Ақийда</item>
+        <item>Долзарб мавзулар</item>
+        <item>Ибодат</item>
+        <item>Молиявий масалалар</item>
+        <item>Оила ва Турмуш</item>
+        <item>Рухсат ва тақиқлар</item>
+        <item>Руҳий тарбия</item>
+        <item>Савол-жавоблар</item>
+        <item>Сафар</item>
+        <item>Уламолар</item>
+        <item>Сафар</item>
+        <item>Фатволар</item>
+        <item>Фиқҳ Академияси</item>
+    </string-array>
+
+    <string-array name="menu_siyrat">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+
+
+    <string-array name="sites">
+        <item>Islom.uz</item>
+        <item>Islam.uz</item>
+        <item>Quran.uz</item>
+        <item>Hadis.islom.uz</item>
+        <item>Fiqh.uz</item>
+        <item>Arabic.uz</item>
+        <item>Madrasa.uz</item>
+        <item>Masjid.uz</item>
+        <item>Siyrat.uz</item>
+        <item>E-tarix.uz</item>
+        <item>Muslimaat.uz</item>
+        <item>Savollar.islom.uz</item>
+        <item>Info.islom.uz</item>
+        <item>E-adabiyot.uz</item>
+        <item>Tazkiya.uz</item>
+        <item>Tib.islom.uz</item>
+        <item>Media.islom.uz</item>
+    </string-array>
+
 
 
 </resources>

@@ -1,34 +1,38 @@
 package uz.islom.section
 
+import android.app.Fragment
 import android.os.Bundle
-import android.support.design.widget.NavigationView
-import android.support.v4.app.Fragment
-import android.support.v4.app.FragmentManager
-import android.support.v4.app.FragmentPagerAdapter
-import android.support.v4.view.GravityCompat
-import android.support.v7.app.ActionBarDrawerToggle
-import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import kotlinx.android.synthetic.main.activity_section.*
-import kotlinx.android.synthetic.main.app_bar_section.*
 import uz.islom.R
+import android.app.SearchManager
+import android.content.Context
+
+
 
 class SectionActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
+    private var site = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        site = intent.getIntExtra("site",0)
+
         setContentView(R.layout.activity_section)
         setSupportActionBar(toolbar)
 
-        fab.setOnClickListener {}
-
-        val toggle = ActionBarDrawerToggle(this, drawer_layout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close)
+        val toggle = ActionBarDrawerToggle(this, drawer_layout, toolbar, R.string.app_name, R.string.app_name)
         drawer_layout.addDrawerListener(toggle)
         toggle.syncState()
 
         nav_view.setNavigationItemSelectedListener(this)
+        pager.adapter = SectionsPagerAdapter(supportFragmentManager)
+        title = resources.getStringArray(R.array.sites)[site]
+
+
+        tabs.setupWithViewPager(pager)
     }
 
     override fun onBackPressed() {
@@ -40,13 +44,16 @@ class SectionActivity : AppCompatActivity(), NavigationView.OnNavigationItemSele
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.section, menu)
-        return true
-    }
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return super.onOptionsItemSelected(item)
+        val searchItem = menu.findItem(R.id.action_search)
+
+        val searchManager = getSystemService(Context.SEARCH_SERVICE) as SearchManager
+
+        val searchView: SearchView?
+        searchView = searchItem.actionView as SearchView
+        searchView.setSearchableInfo(searchManager.getSearchableInfo(componentName))
+        return true
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
@@ -76,14 +83,30 @@ class SectionActivity : AppCompatActivity(), NavigationView.OnNavigationItemSele
         return true
     }
 
+
+
     inner class SectionsPagerAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
 
         override fun getItem(position: Int): Fragment {
-            return SectionFragment.newInstance(position + 1)
+            return SectionFragment.newInstance(position,site)
         }
 
         override fun getCount(): Int {
-            return 3
+            return when(site){
+                0 -> resources.getStringArray(R.array.menu_islom).size
+                4 -> resources.getStringArray(R.array.menu_fiqh).size
+                else -> resources.getStringArray(R.array.menu_islom).size
+
+
+            }
+        }
+
+        override fun getPageTitle(position: Int): CharSequence {
+            return when(site){
+                1 -> resources.getStringArray(R.array.menu_islom)[position]
+                else -> resources.getStringArray(R.array.menu_islom)[position]
+
+            }
         }
     }
 }

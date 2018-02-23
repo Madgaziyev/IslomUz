@@ -2,7 +2,6 @@ package uz.islom.main
 
 import android.content.BroadcastReceiver
 import android.content.IntentFilter
-import java.util.*
 
 /**
  * $developer = JavokhirKadirov

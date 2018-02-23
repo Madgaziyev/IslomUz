@@ -1,6 +1,6 @@
 package uz.islom.section
 
-import uz.islom.model.Article
+import uz.islom.Model.Article as Article
 
 /**
  * $developer = JavokhirKadirov
@@ -12,8 +12,7 @@ import uz.islom.model.Article
  * $linkidin = linkedin.com/in/javokhirkadirov
  **/
 interface SectionView{
-    fun startRefresh()
     fun stopRefresh()
     fun addDates(data: ArrayList<Article>)
-    fun clearData()
+
 }
